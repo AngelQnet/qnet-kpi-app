@@ -1,0 +1,77 @@
+------------------------------------------ Form Input ------------------------------------------
+.underline-input {
+  border: none;
+  outline: none;
+  padding: 8px 5px;
+  /* font-size: 16px; */
+  border: 2px solid var(--dark-grey-2);
+  margin-bottom: 16px;
+  background-color: transparent;
+  width: 100%;
+  transition: border-bottom 0.3s, box-shadow 0.3s;
+}
+
+.underline-input:focus {
+  outline: none;
+  border: 2px solid var(--dark-grey);
+  box-shadow: none; /* Soft glow below */
+  transition: border-bottom 0.3s, box-shadow 0.3s;
+}
+
+.form-label{
+    font-weight: bold;
+}
+
+
+/* ------------------------------------------ Login Screen Design------------------------------------------ */
+.login-section, .login-welcome-section{
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.login-welcome-section{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--qnet-purple);
+}
+
+.login-section {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--white);
+}
+
+.login-logo{
+    width: 150px;
+    padding-top: 20px;
+}
+
+.navbar-logo{
+    width: 100px;
+    padding-top: 20px;
+}
+
+.box-border{
+    border: 5px solid var(--qnet-purple);
+}
+
+@media (max-width: 774px) {
+    .login-welcome-section {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .login-section{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+    }
+}
+.mx-9{
+    max-width: 900px;
+}

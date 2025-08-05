@@ -1,0 +1,42 @@
+button{
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: none;
+    width: 75%;
+    border-radius: 10px;
+    font-family: var(--font-family);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*------------------------------------------ Ouline Border Buttons ------------------------------------------*/
+.purple-outline-btn{
+    background-color: var(--white);
+    color: var(--qnet-purple);
+    border: solid var(--qnet-purple);
+}
+.purple-outline-btn:focus,
+.purple-outline-btn:hover {
+  outline: none;
+  box-shadow: 0 0 8px rgba(197, 43, 116, 0.4);
+  border: 2px solid var(--qnet-purple); 
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+.gold-outline-btn{
+    background-color: var(--white);
+    color: var(--qnet-gold);
+    border: solid var(--qnet-gold);
+}
+
+/* ------------------------------------------Solid buttons ------------------------------------------ */
+.purple-solid-btn{
+  background-color: var(--qnet-purple);
+  color: var(--white);
+}
+.purple-solid-btn:hover{
+  background-color: var(--black);
+  /* box-shadow: 0 0 8px rgba(197, 43, 116, 0.4); */
+}

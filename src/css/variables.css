@@ -1,0 +1,21 @@
+:root {
+ /* Qnet Logo colors */
+  --qnet-dark-purple: #8a2764;
+  --qnet-purple: #c52b74;
+  --qnet-gold: #ecac42;
+
+  /* General Colors */
+  --black: #212121;
+  --dark-grey: #282c34;
+  --dark-grey-2: #282c3432;
+  --white: #ffffff;
+  --grey: #f8f8fb;
+
+  .custom-bg {
+    background-color: var(--grey);
+  }
+  
+  .text-muted {
+    color: #74788d !important;
+  }
+}
