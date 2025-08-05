@@ -40,3 +40,12 @@ button{
   background-color: var(--black);
   /* box-shadow: 0 0 8px rgba(197, 43, 116, 0.4); */
 }
+
+.logout-btn {
+  background-color: transparent;
+  color: var(--grey-2);
+}
+.logout-btn:hover{
+  color: var(--red);
+}
+

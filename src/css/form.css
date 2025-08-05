@@ -50,8 +50,10 @@
 }
 
 .navbar-logo{
-    width: 100px;
-    padding-top: 20px;
+    width: 90px;
+    padding-top:10px;
+    margin-left:10px;
+    
 }
 
 .box-border{

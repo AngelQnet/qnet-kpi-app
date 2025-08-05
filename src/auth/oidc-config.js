@@ -7,5 +7,4 @@ authority: 'https://wso2.qnetja.com:9443/oauth2/oidcdiscovery',  // WSO2 Identit
   // post_logout_redirect_uri: 'http://localhost:8000/',    // Where to go after logout
   loadUserInfo: true,
   response_mode: 'query',
-
 }

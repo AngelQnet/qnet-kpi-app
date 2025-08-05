@@ -9,7 +9,10 @@
   --dark-grey: #282c34;
   --dark-grey-2: #282c3432;
   --white: #ffffff;
-  --grey: #f8f8fb;
+  --grey-1: #cacacbcf;
+  --grey-2: #687384;
+  --red: rgb(255, 80, 80);
+
 
   .custom-bg {
     background-color: var(--grey);
