@@ -14,7 +14,8 @@ const Home = () => {
     <>
     <div>
       <h1>Welcome to home</h1>
-      <button onClick={logout}>Logout</button>
+      {/* hi */}
+      
     </div>
     </>
     
