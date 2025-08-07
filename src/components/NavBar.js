@@ -1,6 +1,8 @@
 // src/components/NavBar.js
 import React from 'react';
 import LogoImage from "../assets/logos/Qnet_LOGO_no_coop_colored.png";
+import SearchBar from './SearchBar';
+
 
 function NavBar({ onToggleSidebar }) {
   return (
@@ -11,7 +13,6 @@ function NavBar({ onToggleSidebar }) {
           src={LogoImage}
           alt="Company Logo"
           className="img-fluid navbar-logo"
-          style={{ height: '40px' }}
         />
         {/* Hamburger Icon for Small Screens */}
         <button
@@ -22,6 +23,12 @@ function NavBar({ onToggleSidebar }) {
           <i className="fas fa-bars"></i>
         </button>
       </div>
+
+      {/* Search bar */}
+     <div className="ms-auto">
+        <SearchBar />
+      </div>
+
     </nav>
   );
 }

@@ -49,6 +49,8 @@ button{
 }
 
 .logout-btn:hover{
-  color: var(--red);
+  color: var(--black);
 }
+
+
 

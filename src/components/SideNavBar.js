@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLogout } from '../hooks/useLogout';
+import { NavLink } from 'react-router-dom';
 
 function SideNavBar({ isOpen, onClose }) {
   const logout = useLogout();
@@ -18,7 +19,7 @@ function SideNavBar({ isOpen, onClose }) {
           title="Profile"
         ></i>
         <p className='userName'>First Name</p>
-        <button onClick={logout} className="logout-btn m-4">
+        <button onClick={logout} className="logout-btn m-2">
           <i className="fas fa-power-off me-1"></i>
         </button>
       </div>
@@ -26,21 +27,40 @@ function SideNavBar({ isOpen, onClose }) {
       <div className="p-3 sidenav">
         <ul className="nav flex-column sidebar-menu">
           {/* HOME */}
-          <li className="header">HOME</li>
+          <li className="header">Home</li>
           <li className="nav-item">
-            <Link className="nav-link" to="/home" onClick={onClose}>
+            <NavLink
+              to="/home"
+              onClick={onClose}
+              className={({ isActive }) =>
+                isActive ? 'nav-link active-link' : 'nav-link'
+              }
+            >
               <i className="fa fa-home me-1"></i> Home
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/dashboard" onClick={onClose}>
-              <i className="fa-solid fa-chart-line me-1"></i> Dashboard
-            </Link>
+            <NavLink
+              to="/dashboard"
+              onClick={onClose}
+              className={({ isActive }) =>
+                isActive ? 'nav-link active-link' : 'nav-link'
+              }
+            >
+              <i className="fa fa-chart-line me-1"></i> Dashboard
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/dashboard" onClick={onClose}>
-              <i className="fa-solid fa-user me-1"></i> My KPI
-            </Link>
+            <NavLink
+              to="/myKPI"
+              onClick={onClose}
+              className={({ isActive }) =>
+                isActive ? 'nav-link active-link' : 'nav-link'
+              }
+            >
+              <i className="fa fa-user me-1"></i> My KPI
+            </NavLink>
+           
           </li>
 
           {/* ADMIN */}
@@ -49,7 +69,7 @@ function SideNavBar({ isOpen, onClose }) {
             style={{ cursor: 'pointer' }}
             onClick={() => setAdminOpen(!adminOpen)}
           >
-            ADMIN {adminOpen ? '▲' : '▼'}
+            Admin {adminOpen ? '▲' : '▼'}
           </li>
           {adminOpen && (
             <>
@@ -72,7 +92,7 @@ function SideNavBar({ isOpen, onClose }) {
             style={{ cursor: 'pointer' }}
             onClick={() => setSystemOpen(!systemOpen)}
           >
-            SYSTEM {systemOpen ? '▲' : '▼'}
+            System {systemOpen ? '▲' : '▼'}
           </li>
           {systemOpen && (
             <>

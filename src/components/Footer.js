@@ -1,0 +1,14 @@
+// src/components/Footer.js
+import React from 'react';
+
+function Footer() {
+  return (
+    <footer className="bg-dark text-white mt-auto py-3">
+      <div className="container text-center">
+        <p className="mb-0 text-muted">&copy; {new Date().getFullYear()} QNET. All Rights Reserved.</p>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;

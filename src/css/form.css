@@ -49,12 +49,6 @@
     padding-top: 20px;
 }
 
-.navbar-logo{
-    width: 90px;
-    padding-top:10px;
-    margin-left:10px;
-    
-}
 
 .box-border{
     border: 5px solid var(--qnet-purple);

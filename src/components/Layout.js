@@ -3,8 +3,11 @@ import React, { useState } from 'react';
 import NavBar from './NavBar';
 import SideNavBar from './SideNavBar';
 import { Outlet } from 'react-router-dom';
+import Footer from './Footer';
 
 function Layout() {
+  document.body.classList.toggle("dark-mode");
+
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -27,8 +30,12 @@ function Layout() {
           <Outlet />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
 
+
+
 export default Layout;
+

@@ -7,6 +7,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import Login from './pages/login';
 import Dashboard from './pages/dashboard'; 
 import Home from './pages/Home';
+import MyKPI from './pages/myKPI';
 import Callback from './pages/callback';
 
 import ProtectedRoute from './components/ProtectedRoute';
@@ -34,6 +35,7 @@ function App() {
           >
             <Route path="/home" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/myKPI" element={<MyKPI />}/>
           </Route>
         </Routes>
       </AuthInitializer>

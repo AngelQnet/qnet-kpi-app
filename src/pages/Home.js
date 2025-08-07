@@ -13,7 +13,7 @@ const Home = () => {
   return (
     // <>
     <div>
-      <p>Home</p>
+      <h4>Home</h4>
     </div>
     // </>
     

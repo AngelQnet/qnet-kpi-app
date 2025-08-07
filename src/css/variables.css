@@ -1,24 +1,38 @@
 :root {
+  /* Light Modes */
+  --bg-color: var(--white);
+  --text-color: var(--black);
+
+
  /* Qnet Logo colors */
   --qnet-dark-purple: #8a2764;
   --qnet-purple: #c52b74;
-  --qnet-gold: #ecac42;
+  --qnet-pink: #E694BA;
+  --qnet-gold: #f8ab2f;
 
   /* General Colors */
-  --black: #212121;
+  --black: #1F1F1F;
   --dark-grey: #282c34;
   --dark-grey-2: #282c3461;
   --white: #ffffff;
   --grey-1: #cacacbcf;
   --grey-2: #687384;
   --red: rgb(255, 80, 80);
+}
 
 
-  .custom-bg {
+/* Dark theme overrides */
+body.dark-mode {
+  --bg-color: var(--dark-grey);
+  --text-color: var(--white);
+}
+
+
+
+.custom-bg {
     background-color: var(--grey) !important;
   }
   
   .text-muted {
     color: #74788d !important;
   }
-}

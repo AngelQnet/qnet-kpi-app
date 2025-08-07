@@ -3,19 +3,14 @@ import { useSelector } from 'react-redux';
 import { useLogout } from '../hooks/useLogout';
 
 const Dashboard = () => {
-   const user = useSelector(state => state.auth.user);
+  const user = useSelector(state => state.auth.user);
   const logout = useLogout();
 
   if (!user) return <p>Not logged in</p>;
 
   return (
     <div>
-      <button
-        className="black-solid-btn"
-        type="button"
-      >
-        Dashboard
-      </button>
+      <h4>Dashboard</h4>
     </div>
   );
 };

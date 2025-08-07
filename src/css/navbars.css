@@ -1,3 +1,10 @@
+
+.navbar-logo{
+    width: 100px;
+    padding:5px;
+    margin-left:10px;
+}
+
 .fa-bars{
   color: var(--white);
 }
@@ -11,17 +18,17 @@
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
-  background-color: var(--white);
+  background-color: var(--qnet-pink);
 }
 
 .userName{
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .sidenav{
     background-color: var(--black);
     width: 200px;
-    height: 200vh;
+    height: 100vh;
     text-overflow: clip;
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1); 
 }
@@ -31,11 +38,21 @@
     display: block;
     font-size: 14px;
     font-weight: .2rem;
-    color: var(--grey-1);    
+    color: var(--grey-1); 
+    text-decoration: none;   
+}
+.nav-link:visited{
+  color: var(--grey-1); 
+}
+
+.nav-link.active-link {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  font-weight: 600;
+  width: 120%;
 }
 
 .nav-link:hover{
-    color: var(--white) !important;
+    color: var(--qnet-pink) !important;
 }
 
 .sidebar-menu li.header {
@@ -43,7 +60,7 @@
     font-size: 12px;
     color: var(--grey-2);
     font-weight: 500;
-    border-bottom: 2px solid var(--grey-2);
+    
 }
 
 
