@@ -1,15 +1,28 @@
 // src/components/Layout.js
-import React from 'react';
+import React, { useState } from 'react';
 import NavBar from './NavBar';
 import SideNavBar from './SideNavBar';
 import { Outlet } from 'react-router-dom';
 
 function Layout() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
+  };
+
   return (
     <div>
-      <NavBar />
+      <NavBar onToggleSidebar={toggleSidebar} />
       <div className="d-flex">
-        <SideNavBar />
+        <SideNavBar isOpen={isSidebarOpen} onClose={closeSidebar} />
+        {isSidebarOpen && (
+          <div className="sidebar-backdrop" onClick={closeSidebar}></div>
+        )}
         <div className="flex-grow-1 p-4 custom-bg">
           <Outlet />
         </div>
