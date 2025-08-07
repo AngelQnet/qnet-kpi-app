@@ -44,7 +44,10 @@ button{
 .logout-btn {
   background-color: transparent;
   color: var(--grey-2);
+  padding: 0px !important;
+  margin-top: 0px !important;
 }
+
 .logout-btn:hover{
   color: var(--red);
 }

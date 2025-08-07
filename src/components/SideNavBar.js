@@ -11,7 +11,23 @@ function SideNavBar() {
   const [systemOpen, setSystemOpen] = useState(false);
 
   return (
-    <div className="p-3 vh-100 sidenav">
+    <div className="sidebar-container">
+      {/* ------------------ USER ------------------ */}
+      <div className='profileUser'>
+        <i
+          className="fas fa-user-circle"
+          style={{ fontSize: '32px', cursor: 'pointer', color: '#333' }}
+          title="Profile"
+        ></i>
+        <p className='userName'>First Name</p>        
+        <button
+          onClick={logout}
+          className="logout-btn m-4">
+          <i className="fas fa-power-off me-1"></i>
+        </button>
+      </div>
+      <div className="p-3 sidenav">
+      
       <ul className="nav flex-column sidebar-menu">
         {/* ------------------ HOME ------------------ */}
         <li className="header">HOME</li>
@@ -40,58 +56,50 @@ function SideNavBar() {
           ADMIN {adminOpen ? '▲' : '▼'}
         </li>
         {adminOpen && (
-          <>
-            <li className="nav-item">
-              <Link className="nav-link" to="/strategy-description">
-                Strategy Description
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/kpi-management">
-                KPI Management
-              </Link>
-            </li>
-          </>
-        )}
+        <>
+          <li className="nav-item">
+            <Link className="nav-link" to="/strategy-description">
+              Strategy Description
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/kpi-management">
+              KPI Management
+            </Link>
+          </li>
+        </>
+      )}
 
-        {/* ------------------ SYSTEM ------------------ */}
-        <li
-          className="header"
-          style={{ cursor: 'pointer' }}
-          onClick={() => setSystemOpen(!systemOpen)}
-        >
-          SYSTEM {systemOpen ? '▲' : '▼'}
-        </li>
-        {systemOpen && (
-          <>
-            <li className="nav-item">
-              <Link className="nav-link" to="/manage-users">
-                Manage Users
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/perspective-strategy">
-                Perspective and Strategy
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/department-tolerance">
-                Department and Tolerance
-              </Link>
-            </li>
-          </>
+      {/* ------------------ SYSTEM ------------------ */}
+      <li
+        className="header"
+        style={{ cursor: 'pointer' }}
+        onClick={() => setSystemOpen(!systemOpen)}
+      >
+        SYSTEM {systemOpen ? '▲' : '▼'}
+      </li>
+      {systemOpen && (
+        <>
+          <li className="nav-item">
+            <Link className="nav-link" to="/manage-users">
+              Manage Users
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/perspective-strategy">
+              Perspective and Strategy
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/department-tolerance">
+              Department and Tolerance
+            </Link>
+          </li>
+        </>
         )}
-
-        {/* ------------------ LOGOUT ------------------ */}
-        <button
-          onClick={logout}
-          className="logout-btn m-4"
-        >
-          <i className="fas fa-sign-out-alt me-1"></i>
-          Logout
-        </button>
       </ul>
     </div>
+  </div>
   );
 }
 

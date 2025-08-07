@@ -10,7 +10,7 @@ function Layout() {
       <NavBar />
       <div className="d-flex">
         <SideNavBar />
-        <div className="flex-grow-1 p-4">
+        <div className="flex-grow-1 p-4 custom-bg">
           <Outlet />
         </div>
       </div>

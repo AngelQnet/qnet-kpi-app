@@ -7,7 +7,7 @@
   /* General Colors */
   --black: #212121;
   --dark-grey: #282c34;
-  --dark-grey-2: #282c3432;
+  --dark-grey-2: #282c3461;
   --white: #ffffff;
   --grey-1: #cacacbcf;
   --grey-2: #687384;
@@ -15,7 +15,7 @@
 
 
   .custom-bg {
-    background-color: var(--grey);
+    background-color: var(--grey) !important;
   }
   
   .text-muted {

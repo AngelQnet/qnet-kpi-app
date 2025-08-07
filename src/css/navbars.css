@@ -1,10 +1,30 @@
 .navbar{
-    background-color: var(--grey-1);
+    background-color: var(--black);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidenav {
+  background-color: var(--white);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1); /* shadow to the right */
+  width: 250px;
+}
+
+.profileUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  background-color: var(--grey-1);
+}
+
+.userName{
+    padding: 10px;
 }
 
 .sidenav{
-    background-color: var(--white);
+    background-color: var(--black);
     width: 200px;
+    height: 200vh;
     text-overflow: clip;
 }
 
@@ -13,17 +33,17 @@
     display: block;
     font-size: 14px;
     font-weight: .2rem;
-    color: var(--grey-2);    
+    color: var(--grey-1);    
 }
 
 .nav-link:hover{
-    color: var(--black) !important;
+    color: var(--white) !important;
 }
 
 .sidebar-menu li.header {
     padding: 10px 25px 10px 9px;
     font-size: 12px;
-    color: var(--grey-2);;
+    color: var(--grey-2);
     font-weight: 500;
-    border-bottom: 2px solid var(--grey-1);
+    border-bottom: 2px solid var(--grey-2);
 }
